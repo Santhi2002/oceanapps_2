@@ -26,7 +26,7 @@
 
 <div class="container mt-5">
     <center><h2> STUDENT REGISTRATION FORM</h2></center>
-    <form method="POST" action="submit.php">
+    <form method="POST" action="receipt.php">
         <div class="mb-3">
             <label for="std_id" class="form-label">Student ID :</label>
             <input type="text" class="form-control" id="std_id" name="std_id" placeholder="Enter the student Id" required>

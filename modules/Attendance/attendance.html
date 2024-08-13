@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Module</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h2 class="text-center">Attendance Form</h2>
+    <form action="mark_attendance.php" method="POST">
+        <div class="form-group">
+            <label for="entityType">Select Type:</label>
+            <select class="form-control" id="entityType" name="entity_type" required>
+                <option value="Student">Student</option>
+                <option value="Staff">Staff</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="entityName">Name:</label>
+            <input type="text" class="form-control" id="entityName" name="entity_name" required>
+        </div>
+        <div class="form-group">
+            <label for="attendanceDate">Date:</label>
+            <input type="date" class="form-control" id="attendanceDate" name="date" required>
+        </div>
+        <div class="form-group">
+            <label for="attendanceStatus">Attendance Status:</label>
+            <select class="form-control" id="attendanceStatus" name="status" required>
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Mark Attendance</button>
+    </form>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
